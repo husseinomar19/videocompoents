@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 2;
     const totalSlides = slides.length;
 
+    
+
     function updateSlider() {
         // Reset all slides
         slides.forEach(slide => {
@@ -46,7 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize slider
-    updateSlider();
+
+        updateSlider();
+
+    
 
     // Event listeners
     nextBtn.addEventListener('click', nextSlide);
