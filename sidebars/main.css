@@ -51,8 +51,29 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
+.video-lenghte-hero{
+    height: 156px;
+    background-color: black;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url(./Rectangle\ 145.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .meest-gekozen img{
     height: 156px;
+}
+.video-lenghte-hero h2{
+    width: 131px;
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 24px;
+    font-weight: bold;
 }
 .meest-gekozen h2{
     color: white;
@@ -188,6 +209,14 @@ body{
     padding: 7px 10px;
     border-radius: 7px;
     font-size: 12px;
+}
+.what-video {
+   height: 190px;
+}
+.what-video video{
+  width: 107px; 
+  height: 190px;
+  border-radius: 7px;
 }
 
 
