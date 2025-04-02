@@ -67,7 +67,7 @@ body{
     text-align: center;
 
 }
-.sidebar-populairste-selectie,.what-you-get,.what-you-get-tekst.meest-gekozen,.videos-populairste-selectie,.eind-sidebar{
+.sidebar-populairste-selectie,.what-you-get,.what-you-get-tekst.meest-gekozen,.videos-populairste-selectie,.eind-sidebar,.prestatie-garantie-tekst{
     width: 331px;
 }
 .what-you-get-tekst p{
@@ -91,7 +91,7 @@ body{
     display: flex;
     gap: 13px;
 }
-.what-tekst p{
+.what-tekst p,.prestatie-garantie-tekst p{
     margin-top:10px;
     color: #5B5D62;
 }
@@ -154,6 +154,12 @@ body{
 }
 .what-you-get-tekst.jouw-selectie span{
     font-weight: bold;
+}
+.prestatie-garantie-tekst{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 40px;
 }
 
 
