@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ahom&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+.continar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 379px;
+    padding: 30px 20px;
+    background-color: white;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-main-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sidebar-main-titel p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar-main-titel svg{
+  position: absolute;
+  right: -50px;
+  cursor: pointer;
+}
+.meest-gekozen{
+    height: 156px;
+    background-color: black;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-image: url(./svg/mask.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.meest-gekozen img{
+    height: 156px;
+}
+.meest-gekozen h2{
+    color: white;
+    width: 131px;
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 24px;
+    font-weight: bold;
+}
+.sidebar-populairste-selectie{
+    margin-top: 35px;
+    text-align: center;
+
+}
+.sidebar-populairste-selectie,.what-you-get,.what-you-get-tekst.meest-gekozen,.videos-populairste-selectie,.eind-sidebar{
+    width: 331px;
+}
+.what-you-get-tekst p{
+    color: #5B5D62;
+    font-weight: 500;
+}
+.sidebar-populairste-selectie p{
+    color: #5B5D62;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 36px;
+    border-bottom: solid 2px #D9D9D9;
+}
+.what-you-get{
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.what-ithems{
+    display: flex;
+    gap: 13px;
+}
+.what-tekst p{
+    margin-top:10px;
+    color: #5B5D62;
+}
+.what-tekst h5,p{
+  font-size: 14px;
+  font-weight: 500;
+}
+.videos-populairste-selectie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    height: 190px;
+}
+.videos-populairste-selectie-ithems{
+    height: 190px;
+    position: relative;
+}
+.videos-populairste-selectie-ithems video{
+    height: 100%;
+    border-radius: 5px;
+}
+.videos-populairste-selectie-ithems svg{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.eind-sidebar{
+   margin-top: 20px; 
+}
+
+
