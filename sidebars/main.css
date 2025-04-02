@@ -173,6 +173,22 @@ body{
 .sidebar-kosteloss img{
     width: 95%;
 }
+.sidebar-hooks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+.sidebar-hooks p{
+    background-color: #153B26;
+    color: #4FEF37;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+}
 
 
 
