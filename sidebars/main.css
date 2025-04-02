@@ -67,10 +67,11 @@ body{
     text-align: center;
 
 }
-.sidebar-populairste-selectie,.what-you-get,.what-you-get-tekst.meest-gekozen,.videos-populairste-selectie,.eind-sidebar,.prestatie-garantie-tekst{
+.sidebar-populairste-selectie,.what-you-get,.what-you-get-tekst.meest-gekozen,.videos-populairste-selectie,.eind-sidebar,.prestatie-garantie-tekst
+,.sidebar-kosteloss{
     width: 331px;
 }
-.what-you-get-tekst p{
+.what-you-get-tekst p,.sidebar-kosteloss p{
     color: #5B5D62;
     font-weight: 500;
 }
@@ -161,7 +162,17 @@ body{
     gap:10px;
     margin-top: 40px;
 }
-
+.sidebar-kosteloss{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.sidebar-kosteloss img{
+    width: 95%;
+}
 
 
 
