@@ -43,7 +43,7 @@ body{
     background-color: black;
     margin-top: 30px;
     border-radius: 5px;
-    background-image: url(./svg/mask.svg);
+    background-image: url(./mask.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -126,6 +126,36 @@ body{
 .eind-sidebar{
    margin-top: 20px; 
 }
+.image-etail{
+    width: 331px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image-etail img{
+    margin-top: 60px;
+}
+.what-you-get p{
+    color: #5B5D62;
+
+}
+.what-you-get span{
+    color: #153B26;
+}
+.what-you-get-tekst.jouw-selectie{
+    background-color: #E2EEE1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.what-you-get-tekst.jouw-selectie p{
+    color:#153B26;
+    line-height: 1.2;
+}
+.what-you-get-tekst.jouw-selectie span{
+    font-weight: bold;
+}
+
 
 
 
