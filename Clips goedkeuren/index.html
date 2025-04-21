@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Revisie</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ahom&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+.continar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 379px;
+    padding: 30px 25px;
+    background-color: white;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sidebar-main-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sidebar-main-titel p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar-main-titel svg{
+  position: absolute;
+  right: -50px;
+  cursor: pointer;
+}
+.sidebarinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+
+}
+.sidebarinner svg{
+    margin-top: 27px;
+}
+.sidebarinner span{
+    width: 100%;
+    height: 1.3px;
+    background-color: #E0E0E0;
+}
+
+.sidebarinner h3,p{
+    text-align: center;
+}
+.sidebarinner h3{
+    margin-top: 30px;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 332px;
+}
+.sidebarinner p{
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #929292;
+  
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 17px;
+}
+.buttons button{
+    padding:15px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cancel{
+
+   border: 1px solid #E0E0E0;
+}
+.confirm{
+    background-color: black;
+    border: 1px solid #1C1C1C;
+    color: white;
+}
+.clipsoptios{
+  margin-top: 30px;
+  border-radius: 4px;
+  border: 1px solid #E0E0E0;
+  width: 100%;
+}
+.clipsoptios-items{
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+    align-items: center;
+    
+}
+.clipsoptios-items p{
+    margin: 0 !important;
+    letter-spacing: 0.3px;
+}
+.clipsoptios-items svg{
+    margin: 0 !important;
+    background-color: #153B26;
+    border-radius: 3px;
+    padding: 5px 4px;
+}
+.clipsinner{
+    width: 	100%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+</style>
+<body>
+    <!-- main contaier -->
+    <div class="continar">
+        <!-- sidebar -->
+
+        <div class="sidebar">
+           
+            <div class="sidebar-main-titel">
+                <p>Clips goedkeuren</p>
+                <!-- Replace this with your component. -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M0.186946 17.8115C0.246652 17.8712 0.317555 17.9186 0.3956 17.951C0.473645 17.9834 0.557301 18 0.641786 18C0.726271 18 0.809927 17.9834 0.887972 17.951C0.966017 17.9186 1.03692 17.8712 1.09663 17.8115L8.99766 9.91113L16.9019 17.8115C17.0225 17.9321 17.1862 17.9999 17.3568 17.9999C17.5274 17.9999 17.691 17.9321 17.8116 17.8115C17.9322 17.6908 18 17.5273 18 17.3567C18 17.1861 17.9322 17.0225 17.8116 16.9019L9.90735 9.00153L17.8084 1.09798C17.929 0.977363 17.9968 0.813767 17.9968 0.643184C17.9968 0.472601 17.929 0.309004 17.8084 0.188384C17.6878 0.0677638 17.5241 0 17.3535 0C17.1829 0 17.0193 0.0677638 16.8987 0.188384L8.99766 8.09193L1.09341 0.191598C0.970427 0.0862864 0.812229 0.0312566 0.650431 0.0375056C0.488632 0.0437546 0.335151 0.110822 0.220656 0.225306C0.106162 0.33979 0.039089 0.493258 0.0328394 0.655042C0.0265898 0.816826 0.0816246 0.97501 0.186946 1.09798L8.08799 9.00153L0.186946 16.9051C0.0672082 17.0255 0 17.1885 0 17.3583C0 17.5281 0.0672082 17.691 0.186946 17.8115Z" fill="black"/>
+                </svg>
+                <!-- Replace this with your component. -->
+
+            </div>
+
+
+            <div class="sidebarinner">
+            <span></span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="28" fill="#FCF4D9" fill-opacity="0.5"/>
+                <circle cx="28" cy="28" r="25" fill="#FCF4D9"/>
+                <path d="M28.7521 16H28.2479C27.0064 16 26 17.0064 26 18.2479V28.9923C26 30.2338 27.0064 31.2402 28.2479 31.2402H28.7521C29.9936 31.2402 31 30.2338 31 28.9923V18.2479C31 17.0064 29.9936 16 28.7521 16Z" fill="#1A1A1A"/>
+                <path d="M28.5 39.7607C29.8807 39.7607 31 38.6415 31 37.2607C31 35.88 29.8807 34.7607 28.5 34.7607C27.1193 34.7607 26 35.88 26 37.2607C26 38.6415 27.1193 39.7607 28.5 39.7607Z" fill="#1A1A1A"/>
+            </svg>
+
+               <h3>Bevestig of je alles hebt ontvangen.</h3>
+               <p>Na goedkeuring kun je geen aanpassingen meer vragen aan de creator.</p>
+             
+               <div class="clipsoptios">
+
+                 <div class="clipsinner">
+                   
+                    <div class="clipsoptios-items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83469 0.126727C9.03792 0.314872 9.05636 0.642644 8.87559 0.854913L3.78685 6.83068C3.60514 7.04406 3.29314 7.05763 3.09549 6.86079L0.150809 3.92785C-0.0328305 3.74494 -0.0504093 3.44015 0.107148 3.23179C0.281001 3.00187 0.604754 2.97022 0.811659 3.16711L3.09633 5.34132C3.29488 5.53027 3.60056 5.51337 3.77944 5.30358L8.15651 0.169086C8.3336 -0.0386922 8.63567 -0.0575264 8.83469 0.126727Z" fill="#4FEF37"/>
+                        </svg>
+                        <p>Creator heeft alles geleverd</p>
+                    </div>
+
+                    <div class="clipsoptios-items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83469 0.126727C9.03792 0.314872 9.05636 0.642644 8.87559 0.854913L3.78685 6.83068C3.60514 7.04406 3.29314 7.05763 3.09549 6.86079L0.150809 3.92785C-0.0328305 3.74494 -0.0504093 3.44015 0.107148 3.23179C0.281001 3.00187 0.604754 2.97022 0.811659 3.16711L3.09633 5.34132C3.29488 5.53027 3.60056 5.51337 3.77944 5.30358L8.15651 0.169086C8.3336 -0.0386922 8.63567 -0.0575264 8.83469 0.126727Z" fill="#4FEF37"/>
+                        </svg>
+                        <p>Briefing is goed uitgevoerd</p>
+                    </div>
+
+                    <div class="clipsoptios-items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83469 0.126727C9.03792 0.314872 9.05636 0.642644 8.87559 0.854913L3.78685 6.83068C3.60514 7.04406 3.29314 7.05763 3.09549 6.86079L0.150809 3.92785C-0.0328305 3.74494 -0.0504093 3.44015 0.107148 3.23179C0.281001 3.00187 0.604754 2.97022 0.811659 3.16711L3.09633 5.34132C3.29488 5.53027 3.60056 5.51337 3.77944 5.30358L8.15651 0.169086C8.3336 -0.0386922 8.63567 -0.0575264 8.83469 0.126727Z" fill="#4FEF37"/>
+                        </svg>
+                        <p>Uitspraak is correct (merknaam)</p>
+                    </div>
+
+                    <div class="clipsoptios-items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83469 0.126727C9.03792 0.314872 9.05636 0.642644 8.87559 0.854913L3.78685 6.83068C3.60514 7.04406 3.29314 7.05763 3.09549 6.86079L0.150809 3.92785C-0.0328305 3.74494 -0.0504093 3.44015 0.107148 3.23179C0.281001 3.00187 0.604754 2.97022 0.811659 3.16711L3.09633 5.34132C3.29488 5.53027 3.60056 5.51337 3.77944 5.30358L8.15651 0.169086C8.3336 -0.0386922 8.63567 -0.0575264 8.83469 0.126727Z" fill="#4FEF37"/>
+                        </svg>
+                        <p>Audio- en beeldkwaliteit zijn in orde.</p>
+                    </div>
+
+                    <div class="clipsoptios-items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83469 0.126727C9.03792 0.314872 9.05636 0.642644 8.87559 0.854913L3.78685 6.83068C3.60514 7.04406 3.29314 7.05763 3.09549 6.86079L0.150809 3.92785C-0.0328305 3.74494 -0.0504093 3.44015 0.107148 3.23179C0.281001 3.00187 0.604754 2.97022 0.811659 3.16711L3.09633 5.34132C3.29488 5.53027 3.60056 5.51337 3.77944 5.30358L8.15651 0.169086C8.3336 -0.0386922 8.63567 -0.0575264 8.83469 0.126727Z" fill="#4FEF37"/>
+                        </svg>
+                        <p>Locatie en dresscode zijn correct</p>
+                    </div>
+
+                    
+
+                 </div>
+
+               </div>
+              
+
+               <!-- button  -->
+
+               <div class="buttons">
+                <button class="cancel">Terug</button>
+                <button class="confirm">Bevestigen</button>
+               </div>
+
+
+            </div>
+     
+
+        </div>
+        <!-- sidebar -->
+    </div>
+     <!-- main contaier -->
+
+</body>
+</html>
