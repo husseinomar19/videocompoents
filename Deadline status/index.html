@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadline status</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ahom&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+.continar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 353px;
+    padding: 30px 25px;
+    background-color: white;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sidebar-main-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sidebar-main-titel p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar-main-titel svg{
+  position: absolute;
+  right: -50px;
+  cursor: pointer;
+}
+.sidebarinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+
+}
+
+.sidebarinner h3 {
+    text-align: center;
+}
+.sidebarinner h3{
+    margin-top: 30px;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 332px;
+    color: #929292;
+}
+.sidebarinner p{
+    margin-top: 33px;
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #929292;
+    border-radius: 4px;
+    letter-spacing: 0.2px;
+    border: 1px solid #E0E0E0;
+  
+}
+.sidebarinner span{
+    width: 100%;
+    height: 1.3px;
+    background-color: #E0E0E0;
+    margin-top: 30px;
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+}
+.buttons button{
+    padding:15px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cancel{
+
+   border: 1px solid #E0E0E0;
+}
+.opmerkingen-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("./Group\ 311.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.opmerkingen-image img{
+    width: 332px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.verzenden{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+.verzenden h3{
+align-self: flex-start;
+color: black;
+}
+.verzend-info{
+    border: 1.2px solid #E0E0E0;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.dealine-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.verzend-info-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.verzend-info-name p{
+   border: none;
+   color: black;
+   font-size: 14px;
+   margin: 0;
+   padding: 0px;
+}
+
+.verzend-info-name p{
+    color: #929292;
+    font-size: 12px;
+}
+.verzend-info-name span{
+    background-color: transparent;
+    color: black;
+}
+.dealine-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.dealine-day{
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+}
+.dealine-day p{
+   padding: 0px;
+   margin: 0px;
+   color: black;
+   border: none;
+   background-color: transparent;
+}
+
+.verlengen{
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    width: 150px;
+    cursor: pointer;
+}
+#dealine-dagen-titel{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-size: 12px;
+    margin-top: 25px;
+}
+</style>
+<body>
+    <!-- main contaier -->
+    <div class="continar">
+        <!-- sidebar -->
+
+        <div class="sidebar">
+           
+            <div class="sidebar-main-titel">
+                <p>Deadline status</p>
+                <!-- Replace this with your component. -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M0.186946 17.8115C0.246652 17.8712 0.317555 17.9186 0.3956 17.951C0.473645 17.9834 0.557301 18 0.641786 18C0.726271 18 0.809927 17.9834 0.887972 17.951C0.966017 17.9186 1.03692 17.8712 1.09663 17.8115L8.99766 9.91113L16.9019 17.8115C17.0225 17.9321 17.1862 17.9999 17.3568 17.9999C17.5274 17.9999 17.691 17.9321 17.8116 17.8115C17.9322 17.6908 18 17.5273 18 17.3567C18 17.1861 17.9322 17.0225 17.8116 16.9019L9.90735 9.00153L17.8084 1.09798C17.929 0.977363 17.9968 0.813767 17.9968 0.643184C17.9968 0.472601 17.929 0.309004 17.8084 0.188384C17.6878 0.0677638 17.5241 0 17.3535 0C17.1829 0 17.0193 0.0677638 16.8987 0.188384L8.99766 8.09193L1.09341 0.191598C0.970427 0.0862864 0.812229 0.0312566 0.650431 0.0375056C0.488632 0.0437546 0.335151 0.110822 0.220656 0.225306C0.106162 0.33979 0.039089 0.493258 0.0328394 0.655042C0.0265898 0.816826 0.0816246 0.97501 0.186946 1.09798L8.08799 9.00153L0.186946 16.9051C0.0672082 17.0255 0 17.1885 0 17.3583C0 17.5281 0.0672082 17.691 0.186946 17.8115Z" fill="black"/>
+                </svg>
+                <!-- Replace this with your component. -->
+
+            </div>
+
+
+            <div class="sidebarinner">
+                <div class="opmerkingen-image">
+                    <img src="./deline.webp" alt="image">
+                </div>
+               <h3>Over <span style="color: #153B26; font-weight: 600; background-color: transparent;">1 dag, 23 uur en 59 minuten</span> moet de content ingeleverd zijn.</h3>
+               <span></span>
+
+
+               <div class="verzenden">
+                <h3>Deadline wijzigen</h3>
+                <div class="verzend-info">
+
+                    <div class="dealine-date">
+                        <div class="verzend-info-name">
+                            <p>Huidige deadline<br><span>12 Apr 2025</span></p>
+                        </div>
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path d="M20.3438 10.1719C20.3438 13.4284 17.6941 16.0781 14.4375 16.0781H3.02264L5.03275 17.8873C5.30223 18.1295 5.32402 18.5445 5.08161 18.814C4.952 18.9579 4.77303 19.0312 4.59359 19.0312C4.43706 19.0312 4.2802 18.9758 4.15475 18.8627L0.873505 15.9096C0.735237 15.7852 0.65625 15.608 0.65625 15.4219C0.65625 15.2357 0.735237 15.0585 0.873505 14.9342L4.15475 11.981C4.42392 11.7382 4.8392 11.7603 5.08161 12.0298C5.32402 12.2992 5.30223 12.7142 5.03275 12.9564L3.02264 14.7656H14.4375C16.9705 14.7656 19.0312 12.7049 19.0312 10.1719C19.0312 9.80946 19.3251 9.51562 19.6875 9.51562C20.0499 9.51562 20.3438 9.80946 20.3438 10.1719ZM1.3125 11.4844C1.67491 11.4844 1.96875 11.1905 1.96875 10.8281C1.96875 8.29509 4.02946 6.23437 6.5625 6.23437H17.9774L15.9673 8.04339C15.6978 8.28595 15.676 8.70092 15.9185 8.97024C16.048 9.11428 16.2268 9.1875 16.4066 9.1875C16.5629 9.1875 16.72 9.1319 16.8452 9.01911L20.1265 6.06598C20.2649 5.94149 20.3438 5.76413 20.3438 5.57812C20.3438 5.39211 20.2649 5.21475 20.1265 5.09026L16.8452 2.13714C16.5758 1.89473 16.1608 1.91668 15.9185 2.186C15.676 2.45533 15.6978 2.87029 15.9673 3.11286L17.9774 4.92187H6.5625C3.30576 4.92187 0.65625 7.57138 0.65625 10.8281C0.65625 11.1905 0.950089 11.4844 1.3125 11.4844Z" fill="#D7D7D7"/>
+                        </svg>
+    
+                        <div class="verzend-info-name">
+                            <p style="text-align: end;">Nieuwe deadline<br><span>14 Apr 2025</span></p>
+                        </div>
+                    </div>
+                    
+
+                    <p id="dealine-dagen-titel">Dagen</p>
+
+                    <div class="dealine-actions">
+
+                        <div class="dealine-day">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2" fill="none">
+                                <path d="M9.03846 1.92308H0.961538C0.429338 1.92308 0 1.49374 0 0.961538C0 0.429338 0.429338 0 0.961538 0H9.03846C9.57066 0 10 0.429338 10 0.961538C10 1.49374 9.57066 1.92308 9.03846 1.92308Z" fill="#1A1A1A"/>
+                            </svg>
+
+                            <p>1</p>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                <path d="M4.99973 10C4.62442 10 4.32031 9.69589 4.32031 9.32058V0.679422C4.32031 0.304109 4.62442 0 4.99973 0C5.37505 0 5.67916 0.304109 5.67916 0.679422V9.32058C5.67916 9.69589 5.37505 10 4.99973 10Z" fill="#1A1A1A"/>
+                                <path d="M9.32058 5.67916H0.679422C0.304109 5.67916 0 5.37505 0 4.99973C0 4.62442 0.304109 4.32031 0.679422 4.32031H9.32058C9.69589 4.32031 10 4.62442 10 4.99973C10 5.37505 9.69589 5.67916 9.32058 5.67916Z" fill="#1A1A1A"/>
+                            </svg>
+
+
+                        </div>
+                        <button class="verlengen">Verlengen</button>
+                    </div>
+
+
+                </div>
+               </div>
+
+               <!-- button  -->
+
+               <div class="buttons">
+                <button class="cancel">Sluiten</button>
+               </div>
+
+
+            </div>
+     
+
+        </div>
+        <!-- sidebar -->
+    </div>
+     <!-- main contaier -->
+
+</body>
+</html>

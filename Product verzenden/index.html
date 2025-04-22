@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product verzenden</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ahom&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+
+.continar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 353px;
+    padding: 30px 25px;
+    background-color: white;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sidebar-main-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sidebar-main-titel p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.sidebar-main-titel svg{
+  position: absolute;
+  right: -50px;
+  cursor: pointer;
+}
+.sidebarinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+
+}
+
+.sidebarinner h3 {
+    text-align: center;
+}
+.sidebarinner h3{
+    margin-top: 30px;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 332px;
+    color: #929292;
+}
+.sidebarinner p{
+    margin-top: 33px;
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #929292;
+    border-radius: 4px;
+    letter-spacing: 0.2px;
+    border: 1px solid #E0E0E0;
+  
+}
+.sidebarinner span{
+    width: 100%;
+    height: 1.3px;
+    background-color: #E0E0E0;
+    margin-top: 30px;
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 17px;
+}
+.buttons button{
+    padding:15px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cancel{
+
+   border: 1px solid #E0E0E0;
+}
+.confirm{
+    background-color: black;
+    border: 1px solid #1C1C1C;
+    color: white;
+}
+.opmerkingen-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("./Group\ 311.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.opmerkingen-image img{
+    
+    width: 258px;
+    object-fit: cover;
+}
+.verzenden{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+.verzenden h3{
+align-self: flex-start;
+color: black;
+}
+.verzend-info{
+    border: 1.2px solid #E0E0E0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: relative;
+}
+.verzend-info svg{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    background-color: #E0E0E0;
+    padding: 5px;
+    border-radius: 2px;
+}
+.verzend-info-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.verzend-info-name p{
+   border: none;
+   color: black;
+   font-size: 14px;
+   margin: 0;
+   padding: 0px;
+}
+.verzend-info-name img{
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.verzend-adres{
+    margin-top: 10px;
+}
+.verzend-adres p{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+.Voorbereiden{
+    background-color: #E0E0E0;
+    padding: 5px 10px !important;
+    border-radius: 4px;
+    color: #153B26 !important;
+    font-size: 12px !important;
+}
+.verzend-info-name p{
+    color: #929292;
+}
+.verzend-info-name span{
+    background-color: transparent;
+    color: black;
+}
+.tracking{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+#tracking{
+ border: none;
+ padding: 0px;
+ margin: 0px;
+}
+.tracking-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    gap: 4px;
+}
+.tracking-line div{
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #E0E0E0;
+    padding: 0px;
+    margin: 0px;
+}
+.tracking-line span{
+    padding: 0px;
+    margin: 0px;
+    width: 85px;
+}
+</style>
+<body>
+    <!-- main contaier -->
+    <div class="continar">
+        <!-- sidebar -->
+
+        <div class="sidebar">
+           
+            <div class="sidebar-main-titel">
+                <p>Product verzenden</p>
+                <!-- Replace this with your component. -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M0.186946 17.8115C0.246652 17.8712 0.317555 17.9186 0.3956 17.951C0.473645 17.9834 0.557301 18 0.641786 18C0.726271 18 0.809927 17.9834 0.887972 17.951C0.966017 17.9186 1.03692 17.8712 1.09663 17.8115L8.99766 9.91113L16.9019 17.8115C17.0225 17.9321 17.1862 17.9999 17.3568 17.9999C17.5274 17.9999 17.691 17.9321 17.8116 17.8115C17.9322 17.6908 18 17.5273 18 17.3567C18 17.1861 17.9322 17.0225 17.8116 16.9019L9.90735 9.00153L17.8084 1.09798C17.929 0.977363 17.9968 0.813767 17.9968 0.643184C17.9968 0.472601 17.929 0.309004 17.8084 0.188384C17.6878 0.0677638 17.5241 0 17.3535 0C17.1829 0 17.0193 0.0677638 16.8987 0.188384L8.99766 8.09193L1.09341 0.191598C0.970427 0.0862864 0.812229 0.0312566 0.650431 0.0375056C0.488632 0.0437546 0.335151 0.110822 0.220656 0.225306C0.106162 0.33979 0.039089 0.493258 0.0328394 0.655042C0.0265898 0.816826 0.0816246 0.97501 0.186946 1.09798L8.08799 9.00153L0.186946 16.9051C0.0672082 17.0255 0 17.1885 0 17.3583C0 17.5281 0.0672082 17.691 0.186946 17.8115Z" fill="black"/>
+                </svg>
+                <!-- Replace this with your component. -->
+
+            </div>
+
+
+            <div class="sidebarinner">
+                <div class="opmerkingen-image">
+                    <img src="./img.webp" alt="image">
+                </div>
+               <h3>Verstuur je pakket naar de creator en voeg de Track & Trace code toe </h3>
+               <span></span>
+
+
+               <div class="verzenden">
+                <h3>Verzend Informatie</h3>
+                <div class="verzend-info">
+
+                    <div class="verzend-info-name">
+                        <p>shipments@hyred.nl</p>
+                        <img src="./image.webp" alt="avatar">
+                    </div>
+
+                    <div class="verzend-adres">
+                        <p style="color: black;">Marloes</p>
+                        <p>Allard piersonlaan 154</p>
+                        <p>2522 MT, Den Haag</p>
+                        <p>Netherlands</p>
+
+                    </div>
+
+                    
+
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M9.00952 2.44824H2.50123C1.89054 2.44824 1.39453 2.94425 1.39453 3.55494V12.8931C1.39453 13.5037 1.89054 13.9997 2.50123 13.9997H9.00952C9.62021 13.9997 10.1162 13.5037 10.1162 12.8931V3.55494C10.1134 2.94425 9.61735 2.44824 9.00952 2.44824ZM9.33924 12.8902C9.33924 13.0737 9.19015 13.2228 9.00666 13.2228H2.49836C2.31487 13.2228 2.16578 13.0737 2.16578 12.8902V3.55494C2.16578 3.37145 2.31487 3.22236 2.49836 3.22236H9.00666C9.19015 3.22236 9.33924 3.37145 9.33924 3.55494V12.8902Z" fill="black"/>
+                        <path d="M11.4978 0H4.98951C4.37882 0 3.88281 0.496007 3.88281 1.1067C3.88281 1.32173 4.05484 1.49375 4.26987 1.49375C4.4849 1.49375 4.65693 1.32173 4.65693 1.1067C4.65693 0.923203 4.80602 0.774114 4.98951 0.774114H11.4978C11.6813 0.774114 11.8304 0.923203 11.8304 1.1067V10.4448C11.8304 10.6283 11.6813 10.7774 11.4978 10.7774C11.2828 10.7774 11.1107 10.9494 11.1107 11.1644C11.1107 11.3795 11.2828 11.5515 11.4978 11.5515C12.1085 11.5515 12.6045 11.0555 12.6045 10.4448V1.1067C12.6045 0.496007 12.1085 0 11.4978 0Z" fill="black"/>
+                    </svg>
+
+                </div>
+               </div>
+
+               <div class="verzenden">
+                <h3>Verzend Status</h3>
+                <div class="verzend-info">
+
+                    <div class="verzend-info-name">
+                        <p>Product verzonden<br><span>N/A</span>
+                        </p>
+                        <p class="Voorbereiden">Voorbereiden</p>
+                    </div>
+
+
+                    <div class="tracking-line">
+                        <div style="background-color: #4FEF37;"></div>
+                        <span></span>
+                        <div></div>
+                        <span></span>
+                        <div></div>
+                        <span></span>
+                        <div></div>
+                    </div>
+
+
+                    <div class="tracking">
+                        <p id="tracking">Tracking beschikbaar na bevestiging</p>
+                    </div>
+
+                
+
+                </div>
+               </div>
+
+              
+
+               <!-- button  -->
+
+               <div class="buttons">
+                <button class="cancel">Sluiten</button>
+                <button class="confirm">Bevestig verzending </button>
+               </div>
+
+
+            </div>
+     
+
+        </div>
+        <!-- sidebar -->
+    </div>
+     <!-- main contaier -->
+
+</body>
+</html>
