@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>creator dient bezwaar in op revisie</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ahom&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+    }
+    .content {
+      width: 100%;
+      background-color: white;
+      width: fit-content;
+      padding: 50px;
+      min-width: 792px;
+      max-width: 100%;
+    }
+
+    .alleclips {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 40px;
+    }
+    .clips-items {
+        background-color: #E2EEE1;
+        border-radius: 100%;
+        width: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        position: relative;
+    }
+    .clips-items img {
+      width: 30px;
+    }
+    .clip-item h3{
+        margin-top: 5px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .clip-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .active{
+        border: 2px solid #153B26;
+    }
+    .clip-item svg{
+        position: absolute;
+        top: 7px;
+        width: 7px;
+        right: -8px;
+        background-color: #153B26;
+        padding: 5px;
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+    }
+    #clips-line{
+        width: 100%;
+        height: 1.5px;
+        background-color: #E2E2E2;
+        display: block;
+        margin-top: 35px;
+
+    }
+    #clips-titel{
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #FCF4D9;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+    .buttons{
+    margin-top: 30px;
+    display: flex;
+    width:100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+}
+.buttons button{
+    padding:15px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cancel{
+
+   border: 1px solid #E0E0E0;
+}
+.confirm{
+    background-color: black;
+    border: 1px solid #1C1C1C;
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    .content {
+      padding: 20px;
+      min-width: 360px;
+    }
+    .alleclips {
+      gap: 25px;
+    }
+  
+  
+}
+  </style>
+  <body>
+    <div class="content">
+
+
+      <div class="alleclips">
+
+
+       <div class="clip-item">
+        <div class="clips-items active">
+            <img src="./clips.webp" alt="clips" />
+          </div>
+        <h3>Alle clips</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.83469 0.126727C9.03792 0.314872 9.05636 0.642644 8.87559 0.854913L3.78685 6.83068C3.60514 7.04406 3.29314 7.05763 3.09549 6.86079L0.150809 3.92785C-0.0328305 3.74494 -0.0504093 3.44015 0.107148 3.23179C0.281001 3.00187 0.604754 2.97022 0.811659 3.16711L3.09633 5.34132C3.29488 5.53027 3.60056 5.51337 3.77944 5.30358L8.15651 0.169086C8.3336 -0.0386922 8.63567 -0.0575264 8.83469 0.126727Z" fill="#4FEF37"/>
+        </svg>
+       </div>
+
+        <div class="clip-item">
+            <div class="clips-items">
+                <img src="./hooks.webp" alt="clips" />
+            </div>
+            <h3>Hooks</h3>
+        </div>
+
+        <div class="clip-item">
+            <div class="clips-items">
+                <img src="./spreekclips.webp" alt="clips" />
+            </div>
+            <h3>Spreek clips</h3>
+        </div>
+
+        <div class="clip-item">
+            <div class="clips-items">
+                <img src="./brolls.webp" alt="clips" />
+            </div>
+            <h3>B-rolls</h3>
+        </div>
+
+        <div class="clip-item">
+            <div class="clips-items">
+                <img src="./fotos.webp" alt="clips" />
+            </div>
+            <h3>Foto's</h3>
+        </div>
+
+
+      </div>
+
+
+      <span id="clips-line"></span>
+
+
+      <p id="clips-titel">Creator oneens met revisie voorstel, kom samen tot een compromis via de chat</p>
+
+        
+        <!-- button  -->
+
+        <div class="buttons">
+            <button class="cancel">Revisie Wijzigen</button>
+            <button class="confirm">Goedkeuren</button>
+           </div>
+        <!-- button  -->
+
+    </div>
+
+
+
+  </body>
+</html>
